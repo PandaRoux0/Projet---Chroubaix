@@ -1,0 +1,102 @@
+/*
+Theme Name: TwentyElevenUmco
+Description: Theme enfant basé sur "Twenty Eleven"
+Author: Martin / Alexandre
+Author URI: www.martinwallet.fr
+Template: twentyeleven
+Version: 0.1.0
+*/
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+
+/* La barre de naviguation */
+/* Titre principale */
+
+
+/**
+*Page Global
+*/
+body{
+    padding: 0;
+    background: none;
+    font-family: 'Exo', sans-serif;
+}
+#page{
+    max-width: 100%;
+    margin: 0;
+}
+
+/**
+*Barre de navigation
+*/
+
+#access{
+    position: fixed;
+    background: #8BB73E;
+    border-bottom: #FFFFFF 1px solid;
+    box-shadow: 0px 4px 40px rgba(0,0,0,0.50);
+    z-index: 1;
+    padding: 5px 0 5px 0;
+}
+
+#access ul{
+    margin: 0 0 0 12rem;
+}
+
+#branding{
+    border-top: 0;
+}
+
+#branding img{
+    height: auto;
+    display: block;
+}
+
+#branding #img_header{
+    width: 100%;
+    background-attachment: fixed;
+}
+
+#branding #logo{
+    position: absolute;
+    left: 4%;
+    width: 135px;
+}
+
+
+
+#branding #searchform {
+    position: relative;
+    top: 5px;
+    right: 3%;
+    text-align: right;
+}
+
+#menu-menu-1 #menu-item-18 {
+    border-right: none;
+}
+
+#titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    top: 30%;
+    width: 44%;
+    height: 50%;
+    background: rgb(211, 211, 211,0.48);
+}
+
+#site-title{
+    margin-right: 0;
+    padding-top: 0;
+    font-size: 55px;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: -5px -5px 24px rgba(0,0,0,0.50);
+}
+
+
