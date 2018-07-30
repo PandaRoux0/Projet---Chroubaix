@@ -25,9 +25,12 @@ body{
     max-width: 100%;
     margin: 0;
 }
+/*
+*Fin Page Global
+*/
 
 /**
-*Header
+*Header Générale
 */
 
 #branding{
@@ -49,14 +52,30 @@ body{
     left: 9%;
     width: 145px;
 }
-
+/*Barre de recherche*/
 #branding #searchform {
     position: relative;
     top: 5px;
     right: 3%;
     text-align: right;
 }
-/*Barre de navigation*/
+
+#branding #s{
+    position: relative;
+    z-index: 2;
+    background-color: #f9f9f9;
+}
+
+#branding #s:focus {
+    width: 072px;
+}
+/**
+*Fin Header Générale
+*/
+
+/*
+*Menu Barre de navigation
+*/
 #access{
     position: fixed;
     background: #8BB73E;
@@ -74,13 +93,14 @@ body{
     margin: 0 0 0 12.6%;
 }
 
-#menu-menu-1{
-    padding-top: ;
-}
 #menu-menu-1 #menu-item-18 {
     border-right: none;
 }
+/*Fin Menu Barre de navigation*/
 
+/*
+*Adresse
+*/
 #adresse-container{
     position: relative;
     width: 300px;
@@ -98,24 +118,10 @@ body{
     z-index: 0;
 }
 
-#branding #s{
-    position: relative;
-    z-index: 2;
-    background-color: #f9f9f9;
-}
-
-#branding #s:focus {
-    width: 072px;
-}
-
-/**
-*Fin du Header
-*/
-
 /*
 * Titre principale
 */
-#titre{
+#titre-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +135,6 @@ body{
     background: rgb(211, 211, 211,0.48);
 }
 
-
 #site-title{
     margin-right: 0;
     padding-top: 0;
@@ -138,5 +143,20 @@ body{
     text-align: center;
     text-shadow: -5px -5px 24px rgba(0,0,0,0.50);
 }
+/*Fin Titre principale*/
 
 
+/*
+* Page de présentation
+*/
+
+
+#qui li{
+    list-style: none;
+    padding: 10px 10px;
+}
+#qui-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

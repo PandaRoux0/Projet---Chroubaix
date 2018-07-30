@@ -104,7 +104,7 @@
 					
 	</nav><!-- #access -->
 		<!--Titre principale-->
-		<div id="titre">
+		<div id="titre-container">
 			<h1 id="site-title" class="entry-title"><?php bloginfo('name') ?></h1>
 		</div>
 			
