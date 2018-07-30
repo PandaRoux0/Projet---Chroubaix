@@ -27,9 +27,36 @@ body{
 }
 
 /**
-*Barre de navigation
+*Header
 */
 
+#branding{
+    border-top: 0;
+}
+
+#branding img{
+    height: auto;
+    display: block;
+}
+
+#branding #img_header{
+    width: 100%;
+    z-index: -1;
+}
+
+#branding #logo{
+    position: absolute;
+    left: 9%;
+    width: 145px;
+}
+
+#branding #searchform {
+    position: relative;
+    top: 5px;
+    right: 3%;
+    text-align: right;
+}
+/*Barre de navigation*/
 #access{
     position: fixed;
     background: #8BB73E;
@@ -43,39 +70,51 @@ body{
     margin: 0 0 0 12rem;
 }
 
-#branding{
-    border-top: 0;
+#access div{
+    margin: 0 0 0 12.6%;
 }
 
-#branding img{
-    height: auto;
-    display: block;
+#menu-menu-1{
+    padding-top: ;
 }
-
-#branding #img_header{
-    width: 100%;
-    background-attachment: fixed;
-}
-
-#branding #logo{
-    position: absolute;
-    left: 4%;
-    width: 135px;
-}
-
-
-
-#branding #searchform {
-    position: relative;
-    top: 5px;
-    right: 3%;
-    text-align: right;
-}
-
 #menu-menu-1 #menu-item-18 {
     border-right: none;
 }
 
+#adresse-container{
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 50px;
+    z-index: 0;
+}
+
+#adresse{
+    color: #FFFFFF;
+    font-size: 11px;
+    margin-bottom: 0;
+    padding: 5px 0;
+    z-index: 0;
+}
+
+#branding #s{
+    position: relative;
+    z-index: 2;
+    background-color: #f9f9f9;
+}
+
+#branding #s:focus {
+    width: 072px;
+}
+
+/**
+*Fin du Header
+*/
+
+/*
+* Titre principale
+*/
 #titre{
     display: flex;
     justify-content: center;
@@ -89,6 +128,7 @@ body{
     height: 50%;
     background: rgb(211, 211, 211,0.48);
 }
+
 
 #site-title{
     margin-right: 0;

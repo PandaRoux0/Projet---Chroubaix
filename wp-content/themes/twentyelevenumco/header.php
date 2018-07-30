@@ -81,18 +81,25 @@
 				<?php endif; ?>
 				<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assigned to the primary location is the one used. If one isn't assigned, the menu with the lowest ID is used. */ ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				
 				<?php
 				//Barre de recherche
 				if ( 'blank' == get_header_textcolor() ) :
 			?>
+			
 				<div class="only-search<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
 				<?php get_search_form(); ?>
 				</div>
 			<?php
 				else :
 			?>
+				
 				<?php get_search_form(); ?>
 			<?php endif; ?>
+			<div id="adresse-container">
+			<p id='adresse'><strong>Cetradine, 26 boulevard Lacordaire, 59100 Roubaix</br>Tél: 03.20.99.30.40</strong></p>
+			</div>
+			
 				  <!--Fin barre de recherche-->	
 					
 	</nav><!-- #access -->
