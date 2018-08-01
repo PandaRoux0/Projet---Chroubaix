@@ -97,7 +97,7 @@
 				<?php get_search_form(); ?>
 			<?php endif; ?>
 			<div id="adresse-container">
-			<p id='adresse'><strong>Cetradine, 26 boulevard Lacordaire, 59100 Roubaix</br>Tél: 03.20.99.30.40</strong></p>
+			<p id='adresse'><strong>Cetradimn, 26 boulevard Lacordaire, 59100 Roubaix</br>Tél: 03.20.99.30.40</strong></p>
 			</div>
 			
 				  <!--Fin barre de recherche-->	

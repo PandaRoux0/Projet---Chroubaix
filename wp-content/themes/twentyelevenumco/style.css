@@ -150,13 +150,73 @@ body{
 * Page de présentation
 */
 
-
+/* Partie : "A qui s'adresse notre programme" */
+#qui{
+    margin: 0 0 80px 0;
+}
 #qui li{
     list-style: none;
     padding: 10px 10px;
 }
+
 #qui-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+/* Partie : "Prise en charge puridisciplinaire" */
+
+#suivie{
+    margin: 0 0 80px 0;
+}
+.suivie-description{
+    margin: auto;
+}
+
+.suivie-description img{
+    border: none;
+    display: flex;
+    margin: auto;
+}
+
+.suivie-description h3{
+    text-align: center;
+}
+
+.suivie-description #suivi-paragraphe{
+    width: 140px;
+    font-size: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 0 31px -4px rgba(0,0,0,0.50);
+    border-radius: 28px;
+    padding: 15px;
+
+}
+#suivie-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Partie : "Charte de nos valeurs" */
+
+#charte-container h2{
+    padding: 0 0 10px 0;
+    text-align: center;
+    font-size: 25px;
+    text-decoration-line: underline;
+    font-weight: lighter;
+}
+.charte-list{
+    display: flex;
+    flex-direction: row;
+}
+#charte-container ul{
+    list-style: none;
+    width: 400px;
+    margin: auto;
+}
+#charte-container li{
+    padding: 0 0 15px 0;
 }
