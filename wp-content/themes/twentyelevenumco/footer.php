@@ -24,8 +24,19 @@
 			?>
 
 			<div id="site-generator">
-				<?php do_action( 'twentyeleven_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
+				<ul id="lien-information">
+					<?php do_action( 'twentyeleven_credits' ); ?>
+					<li><a href="http://localhost/wordpress/mentions-legales/">Mentions légales</a></li>
+					<li><a href="http://localhost/wordpress/liens-utiles/">Liens utiles</a></li>
+					<li><a href="http://localhost/wordpress/plan-du-site/">Plan su site</a></li>
+					<li><a href="http://localhost/wordpress/contact/">Contact</a></li>
+				</ul>
+				<ul id="lien-site">
+					<li><a href="">Site de la cancérologie</a></li>
+					<li><a href="">Site de la néonatologie</a></li>
+					<li><a href="">Site de l'IFSI / l'IFAS</a></li>
+					<li><a href="">Site du ch-Roubaix</a></li>
+				</ul>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

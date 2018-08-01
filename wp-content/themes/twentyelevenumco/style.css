@@ -21,6 +21,7 @@ body{
     background: none;
     font-family: 'Exo', sans-serif;
 }
+
 #page{
     max-width: 100%;
     margin: 0;
@@ -30,7 +31,7 @@ body{
 */
 
 /**
-*Header Générale
+*Barre de navigation
 */
 
 #branding{
@@ -52,7 +53,9 @@ body{
     left: 9%;
     width: 145px;
 }
+
 /*Barre de recherche*/
+
 #branding #searchform {
     position: relative;
     top: 5px;
@@ -69,13 +72,12 @@ body{
 #branding #s:focus {
     width: 072px;
 }
-/**
-*Fin Header Générale
-*/
+
 
 /*
 *Menu Barre de navigation
 */
+
 #access{
     position: fixed;
     background: #8BB73E;
@@ -86,7 +88,12 @@ body{
 }
 
 #access ul{
+    list-style: none;
     margin: 0 0 0 12rem;
+}
+
+#access li{
+    list-style: none;
 }
 
 #access div{
@@ -96,11 +103,10 @@ body{
 #menu-menu-1 #menu-item-18 {
     border-right: none;
 }
-/*Fin Menu Barre de navigation*/
 
-/*
-*Adresse
-*/
+
+/*Adresse*/
+
 #adresse-container{
     position: relative;
     width: 300px;
@@ -117,6 +123,11 @@ body{
     padding: 5px 0;
     z-index: 0;
 }
+
+/*
+* Fin barre de navigation
+*/
+
 
 /*
 * Titre principale
@@ -143,7 +154,13 @@ body{
     text-align: center;
     text-shadow: -5px -5px 24px rgba(0,0,0,0.50);
 }
-/*Fin Titre principale*/
+
+
+/*
+*Fin Titre principale
+*/
+
+
 
 
 /*
@@ -151,14 +168,14 @@ body{
 */
 
 /* Partie : "A qui s'adresse notre programme" */
+
 #qui{
-    margin: 0 0 80px 0;
+    margin: 0 0 95px 0;
 }
 #qui li{
-    list-style: none;
+    list-style-image: url('http://localhost/wordpress/wp-includes/images/checked.png');
     padding: 10px 10px;
 }
-
 #qui-container{
     display: flex;
     flex-direction: row;
@@ -168,7 +185,12 @@ body{
 /* Partie : "Prise en charge puridisciplinaire" */
 
 #suivie{
-    margin: 0 0 80px 0;
+    margin: 0 0 95px 0;
+}
+#suivie-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .suivie-description{
     margin: auto;
@@ -193,14 +215,15 @@ body{
     padding: 15px;
 
 }
-#suivie-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 
 /* Partie : "Charte de nos valeurs" */
 
+#charte-container img{
+    display: flex;
+    margin: 30px auto;
+    
+}
 #charte-container h2{
     padding: 0 0 10px 0;
     text-align: center;
@@ -208,15 +231,49 @@ body{
     text-decoration-line: underline;
     font-weight: lighter;
 }
-.charte-list{
-    display: flex;
-    flex-direction: row;
-}
 #charte-container ul{
-    list-style: none;
     width: 400px;
     margin: auto;
+    padding-left: 20px;
 }
 #charte-container li{
     padding: 0 0 15px 0;
 }
+.charte-list{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+
+/*
+* Footer
+*/
+
+#site-generator{
+    display: flex;
+    font-size: 15px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D3D3D3;
+    text-align: left;
+    padding: 20px 0 0 0;
+}
+
+#site-generator #lien-site{
+    width: 200px;
+    list-style-type: circle;
+}
+
+#site-generator #lien-information{
+    display: flex;
+    list-style: none;
+}
+
+#site-generator #lien-information li{
+    height: 20px;
+    padding: 0 15px 0 15px;
+}
+/*
+* Fin footer
+*/
