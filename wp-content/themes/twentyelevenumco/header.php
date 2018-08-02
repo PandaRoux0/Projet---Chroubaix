@@ -96,16 +96,16 @@
 				
 				<?php get_search_form(); ?>
 			<?php endif; ?>
-			<div id="adresse-container">
-			<p id='adresse'><strong>Cetradimn, 26 boulevard Lacordaire, 59100 Roubaix</br>Tél: 03.20.99.30.40</strong></p>
-			</div>
+			
 			
 				  <!--Fin barre de recherche-->	
-					
+			<div id="adresse-container">
+			<p id='adresse'><strong>CETRADIMN</br> 26 boulevard Lacordaire, 59100 Roubaix</br>Tél: 03.20.99.30.40</strong></p>
+			</div>
 	</nav><!-- #access -->
 		<!--Titre principale-->
 		<div id="titre-container">
-			<h1 id="site-title" class="entry-title"><?php bloginfo('name') ?></h1>
+			<h1 id="site-title" class="entry-title">Unité</br>Médico-Chirurgicale</br>d'Obésité</h1>
 		</div>
 			
 				<!--Fin titre principale-->

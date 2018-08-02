@@ -8,14 +8,7 @@ Version: 0.1.0
 */
 @import url('https://fonts.googleapis.com/css?family=Exo');
 
-
-/* La barre de naviguation */
-/* Titre principale */
-
-
-/**
-*Page Global
-*/
+/*----------------------------------------------------Attributs global--------------------------------------------------------------*/
 body{
     padding: 0;
     background: none;
@@ -26,11 +19,21 @@ body{
     max-width: 100%;
     margin: 0;
 }
-/*
-*Fin Page Global
-*/
+.container{
+    border-top: #D3D3D3 1px solid;
+    margin: 45px 0;
+    padding: 20px 0;
+}
+.container h1{
+    text-align: center;
+}
+.singular .entry-title{
+    font-size: 45px;
+}
 
-/**
+/*---------------------------------------------Header-------------------------------------------------------------*/
+
+/*
 *Barre de navigation
 */
 
@@ -44,6 +47,7 @@ body{
 }
 
 #branding #img_header{
+    padding: 2.8% 0 0 0;
     width: 100%;
     z-index: -1;
 }
@@ -70,12 +74,12 @@ body{
 }
 
 #branding #s:focus {
-    width: 072px;
+    width: 72px;
 }
 
 
 /*
-*Menu Barre de navigation
+*Menu barre de navigation
 */
 
 #access{
@@ -90,10 +94,20 @@ body{
 #access ul{
     list-style: none;
     margin: 0 0 0 12rem;
+    font-size: 14px;
 }
 
-#access li{
+#access li a{
+    -webkit-transition: 0.4s; /* Safari */
+    transition: 0.4s;
     list-style: none;
+}
+
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus {
+    background: #f9f9f9;
+    
 }
 
 #access div{
@@ -112,7 +126,6 @@ body{
     width: 300px;
     display: flex;
     justify-content: center;
-    padding: 0 0 0 50px;
     z-index: 0;
 }
 
@@ -122,6 +135,7 @@ body{
     margin-bottom: 0;
     padding: 5px 0;
     z-index: 0;
+    text-align: center;
 }
 
 /*
@@ -140,19 +154,21 @@ body{
     left:0;
     right:0;
     margin: auto;
-    top: 30%;
+    top: 29%;
     width: 44%;
     height: 50%;
     background: rgb(211, 211, 211,0.48);
 }
 
 #site-title{
+    line-height: 65px;
     margin-right: 0;
     padding-top: 0;
-    font-size: 55px;
+    font-weight: lighter;
+    font-size: 65px;
     color: #FFFFFF;
     text-align: center;
-    text-shadow: -5px -5px 24px rgba(0,0,0,0.50);
+    text-shadow: 0px 0px 45px rgba(0,0,0,1);
 }
 
 
@@ -161,32 +177,28 @@ body{
 */
 
 
-
-
-/*
-* Page de présentation
-*/
-
-/* Partie : "A qui s'adresse notre programme" */
-
-#qui{
-    margin: 0 0 95px 0;
+/*----------------------------------------------Page "présentation"--------------------------------------------------------*/
+.entry-header{
+    display: none;
 }
-#qui li{
+/* Partie : "A qui s'adresse notre programme" */
+#qui{
+    border: none;
+}
+
+#qui-container li{
     list-style-image: url('http://localhost/wordpress/wp-includes/images/checked.png');
     padding: 10px 10px;
 }
+
 #qui-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-/* Partie : "Prise en charge puridisciplinaire" */
+/* Partie : "Prise en charge pluridisciplinaire" */
 
-#suivie{
-    margin: 0 0 95px 0;
-}
 #suivie-container{
     display: flex;
     flex-direction: row;
@@ -215,7 +227,6 @@ body{
     padding: 15px;
 
 }
-
 
 /* Partie : "Charte de nos valeurs" */
 
@@ -246,9 +257,7 @@ body{
 }
 
 
-/*
-* Footer
-*/
+/*---------------------------------------------Footer--------------------------------------------------------*/
 
 #site-generator{
     display: flex;
@@ -261,6 +270,8 @@ body{
 }
 
 #site-generator #lien-site{
+    border-left: #FFFFFF 1px solid;
+    padding: 0 0 0 140px;
     width: 200px;
     list-style-type: circle;
 }
@@ -273,6 +284,23 @@ body{
 #site-generator #lien-information li{
     height: 20px;
     padding: 0 15px 0 15px;
+}
+
+#suivez-nous{
+    padding: 0 140px 0 50px;
+    border-right: #FFFFFF 1px solid;
+}
+
+#suivez-nous h2{
+    color: black;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+#suivez-nous img{
+    padding: 24px 8px 0 8px;
+    height: 50px;
+    width: 50px;
 }
 /*
 * Fin footer

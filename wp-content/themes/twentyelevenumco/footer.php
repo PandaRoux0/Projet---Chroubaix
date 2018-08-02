@@ -24,11 +24,17 @@
 			?>
 
 			<div id="site-generator">
+				<div id="suivez-nous">
+					<h2>Suivez-nous !</h2>
+						<a href=""><img src="http://localhost/wordpress/wp-includes/images/logo-facebook.png" alt=""></a>
+						<a href=""><img src="http://localhost/wordpress/wp-includes/images/logo-google-plus.png" alt=""></a>
+						<a href=""><img src="http://localhost/wordpress/wp-includes/images/logo-youtube.png" alt=""></a>
+				</div>
 				<ul id="lien-information">
 					<?php do_action( 'twentyeleven_credits' ); ?>
 					<li><a href="http://localhost/wordpress/mentions-legales/">Mentions légales</a></li>
 					<li><a href="http://localhost/wordpress/liens-utiles/">Liens utiles</a></li>
-					<li><a href="http://localhost/wordpress/plan-du-site/">Plan su site</a></li>
+					<li><a href="http://localhost/wordpress/plan-du-site/">Plan du site</a></li>
 					<li><a href="http://localhost/wordpress/contact/">Contact</a></li>
 				</ul>
 				<ul id="lien-site">
