@@ -66,6 +66,7 @@
 	wp_head();
 ?>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -100,12 +101,13 @@
 			
 				  <!--Fin barre de recherche-->	
 			<div id="adresse-container">
-			<p id='adresse'><strong>CETRADIMN</br> 26 boulevard Lacordaire, 59100 Roubaix</br>Tél: 03.20.99.30.40</strong></p>
+				<p id='adresse'><strong>CETRADIMN</br> 26 boulevard Lacordaire, 59100 Roubaix</strong></p>
+				<p id='adresse'> Tél: 03.20.99.30.40</p>
 			</div>
 	</nav><!-- #access -->
 		<!--Titre principale-->
 		<div id="titre-container">
-			<h1 id="site-title" class="entry-title">Unité</br>Médico-Chirurgicale</br>d'Obésité</h1>
+			<h1 id="site-title" class="entry-title"><?php bloginfo('name')?></h1>
 		</div>
 			
 				<!--Fin titre principale-->

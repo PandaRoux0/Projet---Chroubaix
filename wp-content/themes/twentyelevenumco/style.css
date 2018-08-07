@@ -27,6 +27,7 @@ body{
 .container h1{
     text-align: center;
 }
+
 .singular .entry-title{
     font-size: 45px;
 }
@@ -63,7 +64,7 @@ body{
 #branding #searchform {
     position: relative;
     top: 5px;
-    right: 3%;
+    right: 11%;
     text-align: right;
 }
 
@@ -123,9 +124,10 @@ body{
 
 #adresse-container{
     position: relative;
-    width: 300px;
+    width: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     z-index: 0;
 }
 
@@ -305,3 +307,70 @@ body{
 /*
 * Fin footer
 */
+
+
+/*-------------------------------------------------Page "article"--------------------------------------------------------*/
+/*
+* Conteneur d'un article 
+*/
+.container-article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 0 100px 0;
+}
+
+.container-article img{
+    margin-right: 20px;
+    width: auto;
+}
+.container-article h3{
+    font-size: 30px;
+}
+
+.container-article p{
+    width: 300px;
+}
+
+.container-article:nth-child(1){
+    order: 3;
+}
+.container-article:nth-child(2){
+    order: 2;
+}
+.container-article:nth-child(3){
+    order: 1;
+}
+
+/*
+* Conteneur d'un article 
+*/
+
+.container-article-inverse{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    margin: 0 0 100px 0;
+}
+
+.container-article-inverse img{
+    margin-left: 20px;
+    width: auto;
+}
+.container-article-inverse h3{
+    font-size: 30px;
+}
+
+.container-article-inverse p{
+    width: 300px;
+}
+
+.container-article-inverse h3:nth-child(1){
+    order: 3;
+}
+.container-article-inverse img:nth-child(2){
+    order: 2;
+}
+.container-article-inverse p:nth-child(3){
+    order: 1;
+}
