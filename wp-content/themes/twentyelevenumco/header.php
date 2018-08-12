@@ -67,6 +67,9 @@
 ?>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/contact-collapse.js" type="text/javascript"></script>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/description-collapse.js" type="text/javascript"></script>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/navbar-mobile.js" type="text/javascript"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -75,35 +78,26 @@
 	<!--Barre de navigation-->
 	<nav id="access" role="navigation">
 				<img id="logo" src="<?php echo get_stylesheet_directory_uri() ?>/img/logo_chroubaix.png" alt="logo" heigth="38px" width="144px">
-				<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-				<div class="skip-link"><a class="assistive-text" href="#content"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a></div>
-				<?php if ( ! is_singular() ) : ?>
-					<div class="skip-link"><a class="assistive-text" href="#secondary"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a></div>
-				<?php endif; ?>
 				<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assigned to the primary location is the one used. If one isn't assigned, the menu with the lowest ID is used. */ ?>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-				
-				<?php
-				//Barre de recherche
-				if ( 'blank' == get_header_textcolor() ) :
-			?>
-			
-				<div class="only-search<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
-				<?php get_search_form(); ?>
+				<div id="toggle">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon-navbar.png" alt="Show" />
 				</div>
-			<?php
-				else :
-			?>
-				
-				<?php get_search_form(); ?>
-			<?php endif; ?>
-			
-			
-				  <!--Fin barre de recherche-->	
-			<div id="adresse-container">
-				<p id='adresse'><strong>CETRADIMN</br> 26 boulevard Lacordaire, 59100 Roubaix</strong></p>
-				<p id='adresse'> Tél: 03.20.99.30.40</p>
-			</div>
+					<div id="popout">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+					</div>
+
+				<!--Partie coordonnées de l'hopital-->
+				<div id="container-contacter">
+					<div class="contacter">
+							<img id="icon-telephone" src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-phone.png"/>
+							<p id="text-telephone">Tél: 03.20.99.30.40</p>
+					</div>
+					<div class="contacter">
+							<img id="icon-adresse" src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-position.png"/>
+							<p id="text-adresse">CETRADIMN</br> 26 boulevard Lacordaire, 59100 Roubaix</p>	
+					</div>
+				</div>	
+					
 	</nav><!-- #access -->
 		<!--Titre principale-->
 		<div id="titre-container">
@@ -157,5 +151,5 @@
 			
 	</header><!-- #branding -->
 
-
+	
 	<div id="main">
