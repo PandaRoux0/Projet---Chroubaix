@@ -1,19 +1,20 @@
 <?php 
 
+/*
+Plugin Name: Scrollspy
+Plugin URI: 
+Description: PLugin permettant la sélection d'un article 
+Version: 0.1
+Author: Midnight Falcon
+Author URI: http://votre-site.com
+License: GPL2
+*/
+
 class scrollspy extends WP_Widget
 {
     public function __construct()
     {
-        $widget_args = array(
-            'classname' => 'class-wp-scrollspy-widget',
-            'description' => 'Permet la sélection d\'un article au choix'
-        );
-
-        $control_args = array(
-            'width' => 250
-        );
-        
-        parent::__construct('spy','scrollspy', widget_args, control_args);
+        parent::__construct('spy','scrollspy' ,array('description' => 'Menu permettant de sélectionner l\'article de votre choix sur une page.'));
     }
 
     public function widget($args,$instance){
@@ -37,4 +38,9 @@ class scrollspy extends WP_Widget
     }
 }
 
+function init_scrollspy_widget(){
+    register_widget('scrollspy');
+}
+
+add_action( 'widgets_init', 'init_scrollspy_widget');
 ?>

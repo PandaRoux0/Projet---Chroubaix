@@ -66,10 +66,13 @@
 	wp_head();
 ?>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<<<<<<< HEAD
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri() ?>/contact-collapse.js" type="text/javascript"></script>
 <script src="<?php echo get_stylesheet_directory_uri() ?>/description-collapse.js" type="text/javascript"></script>
 <script src="<?php echo get_stylesheet_directory_uri() ?>/navbar-mobile.js" type="text/javascript"></script>
+=======
+>>>>>>> parent of 911bad0... Wordpress v2.0
 </head>
 
 <body <?php body_class(); ?>>
@@ -82,6 +85,7 @@
 				<div id="toggle">
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon-navbar.png" alt="Show" />
 				</div>
+<<<<<<< HEAD
 					<div id="popout">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 					</div>
@@ -98,10 +102,24 @@
 					</div>
 				</div>	
 					
+=======
+			<?php
+				else :
+			?>
+				
+				<?php get_search_form(); ?>
+			<?php endif; ?>
+			
+			
+				  <!--Fin barre de recherche-->	
+			<div id="adresse-container">
+			<p id='adresse'><strong>CETRADIMN</br> 26 boulevard Lacordaire, 59100 Roubaix</br>Tél: 03.20.99.30.40</strong></p>
+			</div>
+>>>>>>> parent of 911bad0... Wordpress v2.0
 	</nav><!-- #access -->
 		<!--Titre principale-->
 		<div id="titre-container">
-			<h1 id="site-title" class="entry-title"><?php bloginfo('name')?></h1>
+			<h1 id="site-title" class="entry-title">Unité</br>Médico-Chirurgicale</br>d'Obésité</h1>
 		</div>
 			
 				<!--Fin titre principale-->

@@ -43,6 +43,7 @@ h5{
     text-decoration-line: underline;
     padding-bottom: 12px;
 }
+<<<<<<< HEAD
 
 #page{
     max-width: 100%;
@@ -50,6 +51,8 @@ h5{
 }
 
 
+=======
+>>>>>>> parent of 911bad0... Wordpress v2.0
 .singular .entry-title{
     font-size: 45px;
 }
@@ -80,6 +83,29 @@ h5{
     width: 135px;
 }
 
+<<<<<<< HEAD
+=======
+/*Barre de recherche*/
+
+#branding #searchform {
+    position: relative;
+    top: 5px;
+    right: 3%;
+    text-align: right;
+}
+
+#branding #s{
+    position: relative;
+    z-index: 2;
+    background-color: #f9f9f9;
+}
+
+#branding #s:focus {
+    width: 72px;
+}
+
+
+>>>>>>> parent of 911bad0... Wordpress v2.0
 /*
 *Menu barre de navigation
 */
@@ -126,6 +152,7 @@ h5{
 
 /*Adresse et téléphone*/
 
+<<<<<<< HEAD
 
 #container-contacter{
     position: absolute;
@@ -144,6 +171,14 @@ h5{
 }
 .contacter #text-adresse{
     width: 300px;
+=======
+#adresse-container{
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+>>>>>>> parent of 911bad0... Wordpress v2.0
 }
 
 .contacter #text-telephone{
@@ -345,6 +380,7 @@ h5{
 }
 /*
 * Fin footer
+<<<<<<< HEAD
 */
 
 
@@ -529,3 +565,6 @@ h5{
            font-size: 28px;
        }
    } 
+=======
+*/
+>>>>>>> parent of 911bad0... Wordpress v2.0
