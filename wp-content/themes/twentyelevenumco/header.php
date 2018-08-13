@@ -67,10 +67,13 @@
 ?>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri() ?>/contact-collapse.js" type="text/javascript"></script>
 <script src="<?php echo get_stylesheet_directory_uri() ?>/description-collapse.js" type="text/javascript"></script>
 <script src="<?php echo get_stylesheet_directory_uri() ?>/navbar-mobile.js" type="text/javascript"></script>
+=======
+>>>>>>> parent of 911bad0... Wordpress v2.0
 =======
 >>>>>>> parent of 911bad0... Wordpress v2.0
 </head>

@@ -7,6 +7,7 @@ function theme_enqueue_styles() {
  wp_register_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 add_action('widgets_init', 'twentyelevenumco_widgets_init');
@@ -100,5 +101,7 @@ function wpm_new_image(){
 }
 add_action( 'after_setup_theme', 'wpm_new_image');
 ?>
+=======
+>>>>>>> parent of 911bad0... Wordpress v2.0
 =======
 >>>>>>> parent of 911bad0... Wordpress v2.0
